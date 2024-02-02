@@ -4,26 +4,15 @@
   "version": "0.1",
   "manifest_version": 3,
   "permissions": [
-    "declarativeContent",
-    "declarativeNetRequest",
     "storage",
-    "notifications"
+    "webNavigation",
+    "webRequest"
   ],
-  "declarative_net_request": {
-    "rule_resources": [
-      {
-        "id": "rule1",
-        "enabled": true,
-        "path": "rules/rule1.json"
-      }
-    ]
-  },
   "background": {
     "service_worker": "service.js"
   },
   "host_permissions": [
-    "*://*.wix.com/*",
-    "*://*.parastorage.com/*"
+    "*://*/*"
   ],
   "action": {
     "default_popup": "popup/popup.html",
