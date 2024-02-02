@@ -3,20 +3,27 @@ chrome.runtime.onInstalled.addListener(() => {
 })
 
 chrome.webNavigation.onBeforeNavigate.addListener((details) => {
-  if (details.url.includes("wix.com")) {
-    chrome.storage.local.get(["enabled"]).then((storage) => {
+  chrome.storage.local.get(["enabled"]).then((storage) => {
+    if (details.url.includes("wix.com")) {
+      chrome.storage.local.set({ notice: { visited_site: "wix.com" } })
       if (storage.enabled) {
         chrome.tabs.update(details.tabId, {
           url: chrome.runtime.getURL("/src/notice.html"),
         })
       }
-    })
-  }
+    }
+  })
 })
 
 let callback = function (details) {
   chrome.storage.local.get(["enabled"]).then((storage) => {
-    let url = new URL(details.initiator).hostname
+    let hostname = new URL(details.url).hostname
+    let url
+    if (hostname === "wix.com") {
+      url = hostname
+    } else {
+      url = new URL(details.initiator).hostname
+    }
     chrome.storage.local.set({ notice: { visited_site: url } })
     if (storage.enabled) {
       chrome.tabs.update(details.tabId, {

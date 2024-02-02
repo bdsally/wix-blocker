@@ -8,7 +8,7 @@ var tofu = function (a, c) {
   })
 }
 
-window.addEventListener("load", function (e) {
+window.addEventListener("load", function () {
   var body = document.getElementsByTagName("body")[0]
   chrome.storage.local.get("notice", function (result) {
     if (result.notice) {
