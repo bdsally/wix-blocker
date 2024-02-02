@@ -1,0 +1,36 @@
+{
+  "name": "Wix Warning",
+  "description": "Warn users when they are visiting a website hosted by Wix",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "declarativeContent",
+    "declarativeNetRequest",
+    "storage",
+    "notifications"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rule1",
+        "enabled": true,
+        "path": "rules/rule1.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "service.js"
+  },
+  "host_permissions": [
+    "*://*.wix.com/*",
+    "*://*.parastorage.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Wix Warning!",
+    "default_icon": {
+      "16": "images/24x24.png"
+    }
+  }
+}
+

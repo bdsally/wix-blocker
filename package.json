@@ -1,0 +1,15 @@
+{
+  "name": "wix_blocker",
+  "version": "1.0.0",
+  "description": "Blocks Wix sites",
+  "main": "service.js",
+  "scripts": {
+    "test": "text"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "eslint": "^8.52.0"
+  }
+}
