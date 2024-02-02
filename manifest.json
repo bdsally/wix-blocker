@@ -1,6 +1,6 @@
 {
-  "name": "Wix Warning!",
-  "description": "Warn users when they are visiting a website hosted by Wix",
+  "name": "BDS - Wix Blocker",
+  "description": "Optionally block Wix websites from loading in your browser.",
   "version": "0.1",
   "manifest_version": 3,
   "permissions": [
@@ -16,9 +16,12 @@
   ],
   "action": {
     "default_popup": "popup/popup.html",
-    "default_title": "Wix Warning!",
+    "default_title": "Wix Blocker",
     "default_icon": {
-      "16": "images/24x24.png"
+      "16": "images/16-16.png",
+      "32": "images/32-32.png",
+      "32": "images/48-48.png",
+      "128": "images/128-128.png"
     }
   }
 }
