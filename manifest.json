@@ -18,10 +18,9 @@
     "default_popup": "popup/popup.html",
     "default_title": "Wix Blocker",
     "default_icon": {
-      "16": "images/16-16.png",
-      "32": "images/32-32.png",
-      "32": "images/48-48.png",
-      "128": "images/128-128.png"
+      "16": "images/wixblockerlogo@4x.png",
+      "32": "images/wixblockerlogo@4x.png",
+      "128": "images/wixblockerlogo@4x.png"
     }
   }
 }
