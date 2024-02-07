@@ -4,6 +4,16 @@ body {
     font-family: 'Helvetica', sans-serif;
     background-color: #ffffff;
 }
+.logos-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.bdslogo {
+    height: 30px;
+}
+.tfplogo {
+    height: 30px;
+}
 
 @media (max-width: 780px) {
     body{
