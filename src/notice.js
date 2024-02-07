@@ -18,5 +18,13 @@ window.addEventListener("load", function () {
     var template = tofu(text, { visited_site: visited_site })
     body.innerHTML = template
     body.style.display = "block"
+
+      const bypassSite = () => {
+        chrome.storage.local.set({ enabled: false })
+        chrome.tabs.update({ url: `https://${visited_site}` })
+      }
+
+      const h = document.getElementById("bypass-link")
+      h.addEventListener('click', bypassSite, false);
   })
 })
