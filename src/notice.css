@@ -1,8 +1,18 @@
 body {
-    margin: 0 10%;
+    margin: 0 15%;
     padding: 0;
     font-family: 'Helvetica', sans-serif;
     background-color: #ffffff;
+}
+
+@media (max-width: 780px) {
+    body{
+        margin: 0 5%;
+    }
+}
+.center {
+    align-self: center;
+    text-align: center;
 }
 
 main {
@@ -26,8 +36,9 @@ p {
 }
 
 .palflag {
-    font-size: 3rem;
+    height: 2rem;
     margin-bottom: 2rem;
+    mix-blend-mode: multiply;
 }
 
 a {
