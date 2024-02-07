@@ -24,7 +24,7 @@ This project is a partner with TechForPalestine, an organisation to help the cau
 
 Wix is an Israeli website builder & hosting company. It was born out of the Israeli military’s notorious unit 8200, specialising in Cyber terror attacks, intelligence for assassinations, & spying on Palestinians living under occupation. It’s Israel’s most valuable company, worth $19 billion (2021).
 
-While Wix is a publicly listed company, it's headquarters are in Tel Aviv, Israel and the company is fully supportive of the suffereing of the Palestinian people.
+While Wix is a publicly listed company, it's headquarters are in Tel Aviv, Israel and the company is fully supportive of the suffering of the Palestinian people.
 
 An employee of Wix in Dublin, Ireland "was told that she was dismissed with immediate effect over her statements criticising Israel on social media." in October 2024.
 
