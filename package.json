@@ -1,6 +1,6 @@
 {
   "name": "wix_blocker",
-  "version": "1.0.0",
+  "version": "0.1",
   "description": "Blocks Wix sites",
   "main": "service.js",
   "scripts": {
