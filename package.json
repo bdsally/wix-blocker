@@ -11,5 +11,8 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.22.15",
     "eslint": "^8.52.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }
