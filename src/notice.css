@@ -1,16 +1,21 @@
 body {
   margin: 0 15%;
   padding: 0;
-  font-family: "Helvetica", sans-serif;
+
   background-color: #ffffff;
+
+  font-family: "Helvetica", sans-serif;
 }
+
 .logos-container {
   display: flex;
   justify-content: space-evenly;
 }
+
 .bdslogo {
   height: 30px;
 }
+
 .tfplogo {
   height: 30px;
 }
@@ -20,8 +25,10 @@ body {
     margin: 0 5%;
   }
 }
+
 .center {
   align-self: center;
+
   text-align: center;
 }
 
@@ -33,28 +40,32 @@ main {
 }
 
 h1 {
-  font-size: 2.5rem;
   margin-bottom: 1.5rem;
+
   color: #000000;
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.2rem;
   margin-bottom: 1rem;
+
   color: #3d3d3d;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
 .palflag {
   height: 2rem;
   margin-bottom: 2rem;
+
   mix-blend-mode: multiply;
 }
 
 a {
+  cursor: pointer;
+
   color: #007bff;
   text-decoration: none;
-  cursor: pointer;
 }
 
 a:hover {
@@ -67,7 +78,7 @@ a:hover {
 
 .expl-1 {
   font-size: 1.5rem;
-  weight: 600;
+  font-weight: 600;
 }
 
 .container {
@@ -77,8 +88,9 @@ a:hover {
 
 .footer {
   margin-top: 2rem;
-  font-size: 0.8rem;
+
   color: #888;
+  font-size: 0.8rem;
 }
 
 .head {
