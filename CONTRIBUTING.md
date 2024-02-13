@@ -11,4 +11,5 @@ I'd love to accept your contributions!
 * Run `npm install`
 * [Load the extension](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked) to test while you develop.
 * Make your feature addition or bug fix.
+* Run `prettier`
 * Send a pull request.

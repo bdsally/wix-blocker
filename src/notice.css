@@ -1,35 +1,39 @@
 body {
-    margin: 0 15%;
-    padding: 0;
-    font-family: 'Helvetica', sans-serif;
-    background-color: #ffffff;
+	margin: 0 15%;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: "Helvetica", sans-serif;
 }
+
 .logos-container {
-    display: flex;
-    justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
+
 .bdslogo {
-    height: 30px;
+	height: 30px;
 }
+
 .tfplogo {
-    height: 30px;
+	height: 30px;
 }
 
 @media (max-width: 780px) {
-    body{
-        margin: 0 5%;
-    }
+	body {
+		margin: 0 5%;
+	}
 }
+
 .center {
-    align-self: center;
-    text-align: center;
+	align-self: center;
+	text-align: center;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100vh;
 }
 
 h1 {
@@ -79,55 +83,55 @@ a:hover {
 }
 
 .footer {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #000000;
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	color: #000000;
 }
 
 p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #3d3d3d;
-    line-height: 1.6;
+	margin-bottom: 1rem;
+	color: #3d3d3d;
+	font-size: 1.2rem;
+	line-height: 1.6;
 }
 
 .palflag {
-    height: 2rem;
-    margin-bottom: 2rem;
-    mix-blend-mode: multiply;
+	height: 2rem;
+	margin-bottom: 2rem;
+	mix-blend-mode: multiply;
 }
 
 a {
-    color: #007BFF;
-    text-decoration: none;
-    cursor: pointer;
+	cursor: pointer;
+	color: #007bff;
+	text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .links {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .expl-1 {
-    font-size: 1.5rem;
-    weight: 600;
+	font-size: 1.5rem;
+	font-weight: 600;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .footer {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: #888;
+	margin-top: 2rem;
+	color: #888;
+	font-size: 0.8rem;
 }
 
 .head {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
