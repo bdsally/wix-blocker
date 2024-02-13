@@ -2,7 +2,7 @@
 function replaceTemplateStrings(template, data) {
   return template.replace(/%{\s*([^}]+)\s*}/g, (match, key) => {
     let value = data
-    key.split(".").forEach(part => {
+    key.split(".").forEach((part) => {
       value = value[part]
     })
     return value || match // Return the match if key not found in data
@@ -22,16 +22,16 @@ async function updateLeaderboardVisits(visitedSite) {
   }
 
   return fetch(url, options)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`)
-        }
-        return response.json()
-      })
-      .then(data => {
-        return data
-      })
-      .catch(error => console.error("Failed to update leaderboard visits:", error))
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      return response.json()
+    })
+    .then((data) => {
+      return data
+    })
+    .catch((error) => console.error("Failed to update leaderboard visits:", error))
 }
 
 // Main function to handle the extension's page load logic
@@ -47,7 +47,7 @@ function handlePageLoad() {
     const { visited_site: visitedSite } = result.notice
 
     // Update leaderboard visits
-    const {visits} = await updateLeaderboardVisits(visitedSite)
+    const { visits } = await updateLeaderboardVisits(visitedSite)
 
     // Process and update the page content
     const body = document.getElementsByTagName("body")[0]
@@ -56,10 +56,14 @@ function handlePageLoad() {
     body.style.display = "block"
 
     // Set up the bypass link
-    document.getElementById("bypass-link")?.addEventListener("click", () => {
-      chrome.storage.local.set({ enabled: false })
-      chrome.tabs.update({ url: `https://${visitedSite}` })
-    }, false)
+    document.getElementById("bypass-link")?.addEventListener(
+      "click",
+      () => {
+        chrome.storage.local.set({ enabled: false })
+        chrome.tabs.update({ url: `https://${visitedSite}` })
+      },
+      false,
+    )
   })
 }
 
