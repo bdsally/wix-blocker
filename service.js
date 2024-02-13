@@ -53,13 +53,9 @@ function handleWebRequest(details) {
 }
 
 chrome.webRequest.onBeforeRequest.addListener(
-    handleWebRequest,
-    {
-      urls: [
-        "*://*.parastorage.com/*",
-        "*://*.wixstatic.com/*",
-        "*://*.wix.com/*",
-      ],
-    },
-    [],
+  handleWebRequest,
+  {
+    urls: ["*://*.parastorage.com/*", "*://*.wixstatic.com/*", "*://*.wix.com/*"],
+  },
+  [],
 )
