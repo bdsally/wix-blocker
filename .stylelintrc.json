@@ -247,8 +247,8 @@
         ]
       }
     ],
-    "at-rule-no-unknown": null,
-    "block-closing-brace-newline-before": "always",
-    "declaration-empty-line-before": null,
+    "at-rule-no-unknown": true,
+    "no-duplicate-selectors": true,
+    "declaration-empty-line-before": null
   }
 }
