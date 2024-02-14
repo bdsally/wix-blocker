@@ -42,6 +42,56 @@ main {
 h1 {
   margin-bottom: 1.5rem;
 
+  color: #333;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.palflag {
+  margin-bottom: 2rem;
+
+  font-size: 3rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+
+  text-decoration: underline;
+}
+
+.links {
+  margin-top: 2rem;
+
+  & > ul {
+    list-style: none;
+  }
+}
+
+.expl-1 {
+  font-size: 1.5rem;
+  weight: 600;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-bottom: 1.5rem;
+
   color: #000000;
   font-size: 2.5rem;
 }
@@ -77,8 +127,8 @@ a:hover {
 }
 
 .expl-1 {
-  font-size: 1.5rem;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .container {
