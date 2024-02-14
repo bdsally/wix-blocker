@@ -1,7 +1,9 @@
 body {
   margin: 0 15%;
   padding: 0;
+
   background-color: #ffffff;
+
   font-family: "Helvetica", sans-serif;
 }
 
@@ -26,6 +28,7 @@ body {
 
 .center {
   align-self: center;
+
   text-align: center;
 }
 
@@ -37,21 +40,24 @@ main {
 }
 
 h1 {
-  font-size: 2.5rem;
   margin-bottom: 1.5rem;
+
   color: #333;
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.2rem;
   margin-bottom: 1rem;
+
   color: #555;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
 .palflag {
-  font-size: 3rem;
   margin-bottom: 2rem;
+
+  font-size: 3rem;
 }
 
 a {
@@ -60,8 +66,9 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   cursor: pointer;
+
+  text-decoration: underline;
 }
 
 .links {
@@ -83,13 +90,15 @@ a:hover {
 }
 
 .footer {
-  font-size: 2.5rem;
   margin-bottom: 1.5rem;
+
   color: #000000;
+  font-size: 2.5rem;
 }
 
 p {
   margin-bottom: 1rem;
+
   color: #3d3d3d;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -98,11 +107,13 @@ p {
 .palflag {
   height: 2rem;
   margin-bottom: 2rem;
+
   mix-blend-mode: multiply;
 }
 
 a {
   cursor: pointer;
+
   color: #007bff;
   text-decoration: none;
 }
@@ -116,8 +127,8 @@ a:hover {
 }
 
 .expl-1 {
-  font-size: 1.5rem;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -127,6 +138,7 @@ a:hover {
 
 .footer {
   margin-top: 2rem;
+
   color: #888;
   font-size: 0.8rem;
 }
