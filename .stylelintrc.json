@@ -2,7 +2,15 @@
   "extends": ["stylelint-prettier/recommended"],
   "plugins": ["stylelint-order"],
   "rules": {
-    "rule-empty-line-before": "always",
+    "block-no-empty": true,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"]
+      }
+    ],
+    "at-rule-empty-line-before": "always",
+    "declaration-no-important": true,
     "order/order": ["custom-properties", "dollar-variables", "declarations", "rules", "at-rules"],
     "order/properties-order": [
       {
