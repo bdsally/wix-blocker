@@ -4,12 +4,13 @@ var tofu = function (a, c) {
     a.replace(/[^.]+/g, function (a) {
       b = b[a]
     })
+
     return b
   })
 }
 
 window.addEventListener("load", function () {
-  var body = document.getElementsByTagName("body")[0]
+  const body = document.body
   chrome.storage.local.get("notice", function (result) {
     if (result.notice) {
       var visited_site = result.notice.visited_site

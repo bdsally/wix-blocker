@@ -3,17 +3,16 @@
   "version": "0.1",
   "description": "Blocks Wix sites",
   "main": "service.js",
+  "type": "module",
   "scripts": {
     "test": "text"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@babel/eslint-parser": "^7.22.15"
-  },
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
+    "globals": "^14.0.0",
     "prettier": "^3.2.5",
     "prettier-eslint": "^16.3.0",
     "stylelint": "^16.2.1",

@@ -1,4 +1,4 @@
-let element = document.getElementById("enabled-chkbx")
+const element = document.getElementById("enabled-chkbx")
 chrome.storage.local.get("enabled").then((data) => {
   element.checked = data.enabled
 })
