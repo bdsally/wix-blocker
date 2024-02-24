@@ -5,6 +5,7 @@ function replaceTemplateStrings(template, data) {
     key.split(".").forEach((part) => {
       value = value[part]
     })
+
     return value || match // Return the match if key not found in data
   })
 }
@@ -15,7 +16,8 @@ async function updateLeaderboardVisits(visitedSite) {
   const options = {
     body: JSON.stringify({ company_name: visitedSite }),
     headers: {
-      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR0ZHlrbWZ4aXFoeGp3dXRuemt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4MzkwNDYsImV4cCI6MjAyMzQxNTA0Nn0.Ls1iXTyV9v9ki-zJAl7o795VO90w0jwzjXuxi5QM47o",
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR0ZHlrbWZ4aXFoeGp3dXRuemt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4MzkwNDYsImV4cCI6MjAyMzQxNTA0Nn0.Ls1iXTyV9v9ki-zJAl7o795VO90w0jwzjXuxi5QM47o",
       "Content-Type": "application/json",
     },
     method: "POST",
@@ -26,6 +28,7 @@ async function updateLeaderboardVisits(visitedSite) {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
       }
+
       return response.json()
     })
     .then((data) => {
@@ -36,17 +39,21 @@ async function updateLeaderboardVisits(visitedSite) {
 
 // Main function to handle the extension's page load logic
 function handlePageLoad() {
+  const FIRST = 0
+  const DEFAULT_COUNT = 1
+
   chrome.storage.local.get("notice", async function (result) {
-    if (!result.notice) return
+    if (!result.notice) {
+      return
+    }
 
     const { visited_site: visitedSite } = result.notice
 
-
     // Process and update the page content
-    const body = document.getElementsByTagName("body")[0]
+    const body = document.getElementsByTagName("body")[FIRST]
     const updatedContent = replaceTemplateStrings(body.innerHTML, {
       visited_site: visitedSite,
-      visits: localStorage.getItem(visitedSite) || 1,
+      visits: localStorage.getItem(visitedSite) || DEFAULT_COUNT,
     })
     body.innerHTML = updatedContent
     body.style.display = "block"
