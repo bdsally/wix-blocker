@@ -5,7 +5,12 @@
   "main": "service.js",
   "type": "module",
   "scripts": {
-    "test": "text"
+    "lint-staged": "lint-staged",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.js": [ "eslint"],
+    "*.{html,js}": "prettier -c"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +18,9 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^14.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "prettier-eslint": "^16.3.0",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-order": "^6.0.4",
