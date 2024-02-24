@@ -1,15 +1,3 @@
-// Function to replace template strings in HTML with dynamic data
-function replaceTemplateStrings(template, data) {
-  return template.replace(/%{\s*([^}]+)\s*}/g, (match, key) => {
-    let value = data
-    key.split(".").forEach((part) => {
-      value = value[part]
-    })
-
-    return value || match // Return the match if key not found in data
-  })
-}
-
 // Function to update the leaderboard visits by making a fetch call
 async function updateLeaderboardVisits(visitedSite) {
   const url = "https://dtdykmfxiqhxjwutnzkz.supabase.co/functions/v1/update-leaderboard-visits"
