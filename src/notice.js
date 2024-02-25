@@ -1,3 +1,5 @@
+import replaceTemplateStrings from "./utils/ejs.js"
+
 // Function to update the leaderboard visits by making a fetch call
 async function updateLeaderboardVisits(visitedSite) {
   const url = "https://dtdykmfxiqhxjwutnzkz.supabase.co/functions/v1/update-leaderboard-visits"
